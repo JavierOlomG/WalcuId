@@ -1,21 +1,27 @@
 {
-    "manifest_version": 3,
-    "name": "WalcuId",
-    "description": "Mostrar Id",
-    "version": "1",
-    "icons": {
-      "128": "kakashi.png"
-    },
-    "permissions": [
-      "activeTab",
-      "scripting",
-      "tabs",
-      "storage"
-    ],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "host_permissions": [
-      "https://crm.walcu.com/*"
-    ]
+  "manifest_version": 3,
+  "name": "WalcuId",
+  "description": "Mostrar Id",
+  "version": "1",
+  "icons": {
+    "128": "kakashi.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "storage",
+    "management"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://crm.walcu.com/*"
+  ],
+  "action": {
+    "default_icon": "icon.png",
+    "default_title": "Activar o desactivar extensión",
+    "default_popup": "active.html"
   }
+}
