@@ -1,7 +1,7 @@
 var extActive = localStorage.getItem("extActive");
 
 if (extActive !== null) {
-  extActive = !!JSON.parse(extActive);
+  extActive = !!JSON.parse(extActive);   //transforms into Boolean
 } else {
   var extActive = true
   localStorage.setItem("extActive", extActive);
